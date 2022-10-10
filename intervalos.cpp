@@ -1,39 +1,28 @@
 #include<stdio.h>
-#include<locale.h>
 
-float num;
+int num;
 
 int main(){
-	
-	setlocale(LC_ALL, "Portuguese");
-	printf("=====================================\n");
-	printf("             INTERVALOS              \n");
-	printf("=====================================\n");
 	printf("Digite um numero: ");
-	scanf("%f",&num);
+	scanf("%d",&num);
 	
-	if (num >= 0 && num <= 100){
-		
-		if (num >= 0 && num <= 25){
-			printf("Intervalo [0,25]");
+	if (num >= -10 && num <= 25){
+		if (num >= -10 && num <= 0){
+			printf("Intervalo: [-10,0]");
 		}
-		
-		else if (num >= 25.01 && num <= 50){
-			printf("Intervalo (25,50]");
+		else if (num >= 1 && num <= 11){
+			printf("Intervalo: [1,11]");
 		}
-		
-		else if (num >= 50.01 && num <= 75){
-			printf("Intervalo (50,75]");
+		else if (num >= 12 && num <= 24){
+			printf("Intervalo: [12,24]");
 		}
-		else if (num >= 75.01 && num <= 100){
-			printf("Intervalo (75,100]");
+		else{
+			printf("Numero igual a 25.");
 		}
 	}
-	
-	else {
-		printf("Numero digitado fora do intervalo.");
+	else{
+		printf("O numero digitado nao esta dentros dos intervalos.");
 	}
 	
 	return 0;
 }
-

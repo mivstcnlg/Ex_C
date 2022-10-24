@@ -28,8 +28,13 @@ char op;
 		break;
 		
 		case '/':
-		result = num1 / num2;
-		printf("Resultado: %.2f",result);
+		if(num2!=0){
+			result = num1 / num2;
+			printf("Resultado: %.2f",result);
+		}
+		else{
+		    printf("Divisao impossivel");
+		}
 		break;
 		
 		default:

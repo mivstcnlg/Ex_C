@@ -17,7 +17,7 @@ int main(){
 	
 	media = acum/20;
 	
-	printf("Soma dos numeros maiores que 50: %.2f \n",acum_cin);
+	printf("Soma dos numeros menores que 50: %.2f \n",acum_cin);
 	printf("Media de todos os numeros: %.2f \n",media);
 	
 	return 0;
